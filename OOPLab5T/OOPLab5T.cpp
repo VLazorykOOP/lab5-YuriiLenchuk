@@ -3,6 +3,7 @@
 
 
 #include <iostream>
+using namespace std;
 
 // Ваші файли загловки 
 //
@@ -10,15 +11,27 @@
 int main()
 {
     std::cout << " Lab #5  !\n";
-    //  Код виконання завдань
-    //  Головне меню завдань
-    //  Функції та класи можуть знаходитись в інших файлах проекту
 
-    int chain = 1;
-    if (chain == 1) chain = mainExample1();
-    if (chain == 2) chain = mainExample2();
-    if (chain == 3) chain = mainExample3();
-    if (chain == 4) chain = mainExample4();
-    if (chain == 5) chain = mainExample5();
+    char ch = '5';
+    do {
+        system("cls");
+        cout << "1 Task1\n";
+        cout << "2 Task2\n";
+        cout << "3 Task3\n";
 
+        ch = cin.get();
+
+        cin.get();
+
+        switch (ch) {
+        case '1': Task1();   break;
+        case '2': Task2();   break;
+        case '3': Task3();   break;
+        case '4': return 0;
+        }
+        cout << " Press any key and enter\n";
+        ch = cin.get();
+    } while (ch != '4');
+
+    return 0;
 }
