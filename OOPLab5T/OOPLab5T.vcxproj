@@ -143,6 +143,9 @@
     <ClCompile Include="OOPLab5T.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Binary Tree.h" />
+    <ClInclude Include="Pair.h" />
+    <ClInclude Include="String.h" />
     <ClInclude Include="Lab5Exmaple.h" />
     <ClInclude Include="Point.h" />
   </ItemGroup>

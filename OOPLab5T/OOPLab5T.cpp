@@ -18,6 +18,7 @@ int main()
         cout << "1 Task1\n";
         cout << "2 Task2\n";
         cout << "3 Task3\n";
+        cout << "4 Task4\n";
 
         ch = cin.get();
 
@@ -27,11 +28,12 @@ int main()
         case '1': Task1();   break;
         case '2': Task2();   break;
         case '3': Task3();   break;
-        case '4': return 0;
+        case '4': Task4();   break;
+        case '5': return 0;
         }
         cout << " Press any key and enter\n";
         ch = cin.get();
-    } while (ch != '4');
+    } while (ch != '5');
 
     return 0;
 }

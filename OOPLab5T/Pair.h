@@ -27,6 +27,20 @@ class Rational {
 public:
     Rational(int a, int b) : p(a, b) {}
 
+    Rational(const Rational& other) : p(other.p) {}
+
+    Rational(Rational&& other) : p(move(other.p)) {}
+
+    Rational& operator=(const Rational& other) {
+        p = other.p;
+        return *this;
+    }
+
+    Rational& operator=(Rational&& other) {
+        p = std::move(other.p);
+        return *this;
+    }
+
     Rational operator+(const Rational& other) const {
         return Rational(p.getFirst() * other.p.getSecond() + other.p.getFirst() * p.getSecond(), p.getSecond() * other.p.getSecond());
     }

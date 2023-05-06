@@ -1,5 +1,4 @@
-﻿#include <fstream>
-#include <iostream>
+﻿#include <iostream>
 #include "Point.h"
 #include "Binary Tree.h"
 #include "String.h"
@@ -12,11 +11,11 @@ void Task1() {
 
     Ellipse e(3.0, 4.0, 5.0, 6.0);
     e.print();
-    std::cout << "Area: " << e.area() << std::endl;
+    cout << "Area: " << e.area() << endl;
 
     Circle c(7.0, 8.0, 9.0);
     c.print();
-    std::cout << "Area: " << c.area() << std::endl;
+    cout << "Area: " << c.area() << endl;
 
     return;
 }
@@ -69,37 +68,49 @@ void Task3() {
     return;
 }
 
-void Task1_() {
+void Task4() {
     Rational a(1, 2);
     Rational b(3, 4);
     Rational c = a + b;
     Rational d = a - b;
     Rational e = a * b;
     Rational f = a / b;
+    Rational g(c);
 
-    std::cout << "a = ";
+    cout << "a = ";
     a.print();
-    std::cout << std::endl;
+    cout << endl;
 
-    std::cout << "b = ";
+    cout << "b = ";
     b.print();
-    std::cout << std::endl;
+    cout << endl;
 
-    std::cout << "a + b = ";
+    cout << "a + b = ";
     c.print();
-    std::cout << std::endl;
+    cout << endl;
 
-    std::cout << "a - b = ";
+    cout << "a - b = ";
     d.print();
-    std::cout << std::endl;
+    cout << endl;
 
-    std::cout << "a * b = ";
+    cout << "a * b = ";
     e.print();
-    std::cout << std::endl;
+    cout << endl;
 
-    std::cout << "a / b = ";
+    cout << "a / b = ";
     f.print();
-    std::cout << std::endl;
+    cout << endl;
+
+    cout << "g = ";
+    g.print();
+    cout << endl;
+
+    Rational h(5, 6);
+    g = move(h);
+
+    cout << "g = ";
+    g.print();
+    cout << endl;
 
     return;
 }
